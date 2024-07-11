@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Function</title>
+  </head>
+  <body>
+    <div>Add: <span id="addText"></span></div>
+    <div>Mul: <span id="mulText"></span></div>
+    <div>Sub: <span id="subText"></span></div>
+    <div>Div: <span id="divText"></span></div>
+
+    <script>
+      function add(n1, n2) {
+        return n1 + n2;
+      }
+
+      function mul(n1, n2) {
+        return n1 * n2;
+      }
+
+      function sub(n1, n2) {
+        return n1 - n2;
+      }
+
+      function div(n1, n2) {
+        return n1 / n2;
+      }
+
+      document.getElementById("addText").innerHTML = add(5, 10);
+      document.getElementById("mulText").innerHTML = mul(20, 3);
+      document.getElementById("subText").innerHTML = sub(30, 19);
+      document.getElementById("divText").innerHTML = div(15, 3);
+    </script>
+  </body>
+</html>
