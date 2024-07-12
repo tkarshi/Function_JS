@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      //PRINT
+      //   function myFun() {
+      //     console.log("Hi");
+      //   }
+      //   myFun();
+
+      //ADD
+      //   function add(n1, n2) {
+      //     console.log(n1 + n2);
+      //   }
+      //   add(10, 15);
+
+      //More than expected data
+      //   function add(n1, n2) {
+      //     console.log(n1 + n2);
+      //   }
+      //   add(10, 15, 20); //No error is display, first two element will added.
+
+      //Missed the element required
+      //   function add(n1, n2) {
+      //     console.log(n2);  //this data not provided
+      //     console.log(n1 + n2);
+      //   }
+      //   add(10); //10 will passed as n1
+
+      //RETURN
+      //   function add(n1, n2) {
+      //     return n1 + n2;
+      //   }
+      //   let value = add(10, 55);
+      //   console.log(value);
+
+      //METHOD1
+      //   let addNumbers = function add(n1, n2) {
+      //     return n1 + n2;
+      //   };
+      //   let value = addNumbers(35, 40);
+      //   console.log(value);
+
+      //METHOD 2 -> ARROW
+      //   let addNumbers = (n1, n2) => {
+      //     return n1 + n2;
+      //   };
+      //   let value = addNumbers(100, 150);
+      //   console.log(value);
+
+      //SHORT ARROW
+      let addNumbers = (n1, n2) => n1 + n2;
+
+      let value = addNumbers(100, 150);
+      console.log(value);
+    </script>
+  </body>
+</html>
